@@ -1,0 +1,88 @@
+.fond-clair{
+    background-color: #EAFEF3;
+}
+.fond-dore{
+    background-color: #ECD9B4;
+}
+
+.vh90{
+    height: 90vh;
+}
+
+.hauteur-hexa{
+    height: 96vh;
+}
+
+.hexago{
+    clip-path: polygon(0 0, 100% 0, 65% 100%, 0% 170%);
+
+}
+.hexago2{
+    clip-path: polygon(0 0, 94% 0, 62% 100%, 0% 170%);
+    margin-top: 0px;
+    border: #ECD9B4 solid 3px;
+}
+.fond-vert{
+    background-color: #394B41;
+    color: #EAFEF3;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.full-vh{
+    height: 100vh;
+}
+.h600p{
+    height: 600px;
+}
+.w60{
+    width: 60%;
+}
+
+.h100{
+    height: 100%;
+}
+
+footer{
+    background-color: #1C2520;
+}
+.bg-h2-vert{
+    background: linear-gradient(90deg, rgba(57,75,65,1) 60%, rgba(57,75,67,0) 60%);
+}
+.bg-h2-dore{
+    background: linear-gradient(90deg, rgba(236,217,180,1) 60%, rgba(236,217,180,0) 60%);
+}
+.bg-h2-clair{
+    background: linear-gradient(90deg, rgba(234,254,243,1) 60%, rgba(234,254,243,0) 60%);
+
+}
+
+@media screen and (max-width: 757px) {
+    .container, .container-fluid {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .full-vh{
+        height: 70vh;
+    }
+    .hexago{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .container, .container-fluid {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .full-vh{
+        height: 70vh;
+    }
+    .hexago{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
