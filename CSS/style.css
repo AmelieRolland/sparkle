@@ -1,12 +1,34 @@
+body{
+    margin: 0;
+}
+
 .fond-clair{
     background-color: #EAFEF3;
+    color: #1C2520;
 }
 .fond-dore{
     background-color: #ECD9B4;
 }
+.form-control{
+    border-radius: 0%;
+}
 
+h1{
+    font-size: 5em;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Libre Caslon Display', serif;
+}
+h2{
+    font-size: 2.2em;
+    text-transform: uppercase;
+}
 .vh90{
     height: 90vh;
+}
+.sac-en-cuir h2{
+    font-size: 2.8em;
 }
 
 .hauteur-hexa{
@@ -15,12 +37,14 @@
 
 .hexago{
     clip-path: polygon(0 0, 100% 0, 65% 100%, 0% 170%);
+    overflow-x: hidden;
 
 }
 .hexago2{
     clip-path: polygon(0 0, 94% 0, 62% 100%, 0% 170%);
     margin-top: 0px;
     border: #ECD9B4 solid 3px;
+
 }
 .fond-vert{
     background-color: #394B41;
@@ -50,6 +74,7 @@ footer{
 }
 .bg-h2-vert{
     background: linear-gradient(90deg, rgba(57,75,65,1) 60%, rgba(57,75,67,0) 60%);
+    color: white;
 }
 .bg-h2-dore{
     background: linear-gradient(90deg, rgba(236,217,180,1) 60%, rgba(236,217,180,0) 60%);
@@ -58,6 +83,75 @@ footer{
     background: linear-gradient(90deg, rgba(234,254,243,1) 60%, rgba(234,254,243,0) 60%);
 
 }
+
+.btn-primary {
+    background-color: #394B41;
+    transition: 0.5s all ease;
+    border: none;
+    border-radius: 0%;
+
+}
+.btn-primary:hover{
+    background-color: #1C2520;
+}
+
+.fond-apropos{
+    background-image: url("../img/img-laverie\ .jpg");
+    color: white;
+    background-attachment : fixed;
+}
+
+.btn-vert{
+    padding: 15px 30px;
+    background-color:#394B41;
+    text-decoration: none;
+    border-radius: 0%;
+    color: #EAFEF3;
+    transition:all 0.5s ease
+}
+.btn-vert:hover{
+    background-color: #394b4100;
+    border: #394B41 solid 1px;
+    border-radius: 0%;
+    color: #1C2520;
+}
+
+.btn-dore{
+    padding: 15px 30px;
+    background-color: #ECD9B4;
+    text-decoration: none;
+    border-radius: 0%;
+    color: #1C2520;
+}
+.btn-dore:hover{
+    background-color: #394b4100;
+    border: #ECD9B4 solid 1px;
+    border-radius: 0%;
+    color: #ECD9B4;
+}
+
+.accordion-button{
+    border: none;
+    background-color: white;
+}
+
+.accordion-button:focus{
+    border-bottom:#ECD9B4 solid 3px;
+    background-color: white;
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed){
+    background-color:white;
+    color: #1C2520;
+}
+.b-none{
+    border: none;
+}
+
+.accordion{
+    border-radius:0%;
+}
+
 
 @media screen and (max-width: 757px) {
     .container, .container-fluid {
@@ -70,6 +164,22 @@ footer{
     }
     .hexago{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .bg-h2-clair{
+        background: linear-gradient(90deg, rgba(234,254,243,1) 60%, rgba(234,254,243,0) 60%);
+    }
+
+    .bg-h2-vert{
+        background: linear-gradient(90deg, rgba(57,75,65,1) 100%, rgba(57,75,67,0) 0%);
+    }
+
+    .bg-h2-dore{
+        background: linear-gradient(90deg, rgba(236,217,180,1) 100%, rgba(236,217,180,0) 0%);
+
+    }
+
+    .w-100{
+        width: 100vw;
     }
 }
 
@@ -84,5 +194,9 @@ footer{
     }
     .hexago{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .hexago2{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
     }
 }
