@@ -2,6 +2,10 @@ body{
     margin: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 .fond-clair{
     background-color: #EAFEF3;
     color: #1C2520;
@@ -55,6 +59,10 @@ p{
     font-family: 'Courier New', Courier, monospace;
 }
 
+.border-dore{
+    border-left: 2px #ECD9B4 solid
+}
+
 .full-vh{
     height: 100vh;
 }
@@ -71,6 +79,10 @@ p{
 
 footer{
     background-color: #1C2520;
+    color: #EAFEF3;
+}
+footer a{
+    color: #ECD9B4;
 }
 .bg-h2-vert{
     background: linear-gradient(90deg, rgba(57,75,65,1) 60%, rgba(57,75,67,0) 60%);
