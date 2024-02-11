@@ -1,7 +1,9 @@
 body{
     margin: 0;
 }
-
+.navbar-nav .nav-link.active, .navbar-nav,.nav-link:focus {
+    color: #EAFEF3;
+}
 
 a{
     text-decoration: none;
@@ -43,12 +45,14 @@ h2{
 .hexago{
     clip-path: polygon(0 0, 100% 0, 65% 100%, 0% 170%);
     overflow-x: hidden;
+    padding: 3px;
 
 }
 .hexago2{
     clip-path: polygon(0 0, 94% 0, 62% 100%, 0% 170%);
     margin-top: 0px;
     border: #ECD9B4 solid 3px;
+
 
 }
 .fond-vert{
@@ -165,6 +169,14 @@ footer a{
 
 .accordion{
     border-radius:0%;
+}
+
+/* PARTIE ACTUS */
+
+.fond-entete{
+    background-image: url("../img/fond-nature.png");
+    color: white;
+    background-attachment : fixed;
 }
 
 

@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="cCSS/aos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-    <script src="javascript/jquery-3.7.1.min.js"></script>
-    <script src="javascript/aos.js"></script>
-    <script src="javascript/bootstrap.bundle.min.js"></script>
-    <script src="javascript/script.js"></script>
+    <script src="JavaScript/jquery-3.7.1.min.js"></script>
+    <script src="JavaScript/aos.js"></script>
+    <script src="JavaScript/bootstrap.bundle.min.js"></script>
+    <script src="JavaScript/script.js"></script>
     
 </head>
 <body class="fond-clair">
@@ -39,26 +39,30 @@
 
                 
 
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <div class="collapse navbar-collapse justify-content-between ps-5" id="navbarNavDropdown">
+                    <div>
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                        <li class="nav-item pe-4">
                             <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                        <li class="nav-item pe-4">
+                            <a class="nav-link active" href="#">Contact</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item pe-4">
                             <a class="nav-link active" aria-current="page" href="pages/actualites.html">Actus</a>
                         </li>
+                    </ul>  
+                    </div>  
 
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart me-3" viewBox="0 0 16 16">
+                    <div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item ps-4">
+                            <a class="nav-link active" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart me-3" viewBox="0 0 16 16">
                                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                               </svg> BLABLA</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item dropdown ps-4">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Mon compte
                             </a>
                             <ul class="dropdown-menu bg-sm-light-pink">
@@ -68,6 +72,7 @@
                             </ul>
                         </li>
                     </ul>
+                    </div>
                 </div>
               
 
@@ -81,7 +86,7 @@
                 
                     <div class="col-lg-6 hexago fond-vert hauteur-hexa px-0">  
                         <div class="bloc-gauche d-flex flex-column justify-content-center">
-                            <div class="hexago2 fond-dore vh90 px-0"></div>
+                            <div class="hexago2 fond-dore vh90 py-0 px-0"><img src="img/fond-nature.png" alt="" class="img-fluid py-0"></div>
                         </div>
                         
                     </div>  
@@ -134,9 +139,15 @@
 
     <section class="nos-prestation fond-vert">
 
-            <h2 class="text-center py-5">Nos prestations</h2>
 
-        <div class="container d-flex flex-column pb-5">
+            <div class="border">
+            <div class="border"><h2 class="text-center px-5 py-5">Nos prestations</h2></div>
+            </div>
+
+        
+        
+        
+            <div class="container d-flex flex-column align-items-center pb-5">
             
                 <div class="row pb-4">
 
@@ -172,16 +183,16 @@
 
                 </div>
                 
-                <div class="d-flex justify-content-center pt-5">
-                <a class="text-center btn-dore" href="#">Je selectionne mes articles</a>
+                <div class="py-5">
+                <a class="btn-dore" href="#">Je selectionne mes articles</a>
                 </div>
         </div>
         
     </section>
 
-    <section class="sac-en-cuir container-fluid fond-vert pb-5">
+    <section class="sac-en-cuir container-fluid fond-vert pt-5 pb-5">
         <div class="container">
-            <div class="row fond-clair mx-0 px-0">
+            <div class="row fond-clair mx-0">
 
                 <div class="col-lg-7 p-0">
                     <div class="border hexago fond-dore h600p">
@@ -284,7 +295,7 @@
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati ex id eveniet totam illum dolores voluptatem nemo rem fugit. Ullam beatae quae velit ratione placeat ipsam expedita aut voluptates repudiandae!
                     </div>
                   </div>
                 </div>
@@ -297,7 +308,7 @@
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse b-none" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo at impedit reprehenderit nobis inventore dolorem obcaecati ratione culpa rerum quae pariatur libero eos sint, fugit eaque accusantium nihil, amet id.
                     </div>
                   </div>
                 </div>
@@ -309,7 +320,7 @@
                   </h2>
                   <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam, natus repellendus expedita, ullam eveniet voluptates nobis ea qui optio voluptas, omnis sequi ducimus numquam molestias iusto nesciunt ipsum libero.
                     </div>
                   </div>
                 </div>
@@ -421,7 +432,7 @@
 
                 <div class="col-3">
                     <div class="mb-4 text-center">
-                        <a href="#">Made with ♡ by Ameligator</a>
+                        <a href="https://www.linkedin.com/in/am%C3%A9lie-rolland-h/" title="lien vers mon linkedIn" target="_blank">Made with ♡ by Ameligator</a>
                     </div>
                 </div>
 
