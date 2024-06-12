@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sparkle</title>
     <link rel="stylesheet" href="../CSS/bootstrap.css">
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/aos.css">
@@ -18,7 +18,7 @@
 
 </head>
 
-<body class="fond-clair">
+<body class="fond-vert">
 
 
     <header>
@@ -124,7 +124,7 @@
                                 <a class="nav-link active" aria-current="page" href="../index.html">Accueil</a>
                             </li>
                             <li class="nav-item pe-4">
-                                <a class="nav-link active" href="#contact">Contact</a>
+                                <a class="nav-link active" href="#">Contact</a>
                             </li>
                             <li class="nav-item pe-4">
                                 <a class="nav-link active border" href="pro.html">Professionnel</a>
@@ -231,125 +231,36 @@
             </div>
             </div>
         </nav>
-        <div class="container-fluid pb-5">
-
-
-        </div>
     </header>
 
-    <!-- <div class="container d-flex justify-content-between">
-        <div>
-            <h2>NETTOYAGE CLASSIQUE</h2>
-        </div>
-        <div>
-            <h2>NETTOYAGE A SEC</h2>
-        </div>
-        <div>
-            <h2>REPASSAGE</h2>
-        </div>
-    </div> -->
-
-    <ul class="nav justify-content-center bg-white py-3">
-        <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Hauts</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Bas</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Robes / Combinaisons</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Accessoires</a>
-        </li>
-    </ul>
-
     <div class="container">
-        <div class="row px-0">
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        <img class="img-fluid" src="../img/delicat.webp" alt="">
-                        <h5 class="card-title">Robe longue</h5>
-                        <p class="card-text"></p>
-                        <div class="counter d-inline">
-                            <button class="btnDecrement btn-outline-secondary">-</button>
-                            <input class="inputQt" type="number" value="0" min="0">
-                            <button class="btnIncrement btn-outline-secondary">+</button>
-                        </div>
-                    </div>
-                </div>
+
+
+        <div class="col-lg-9 mx-auto row fond-clair border p-5 mt-lg-5">
+
+            <div class="col-lg-5">
+                <h1 class="pt-0">Connexion</h1>
+                <!-- <p> Nous sommes ravis de vous revoir !</p> -->
             </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        <img class="img-fluid" src="../img/delicat.webp" alt="">
-                        <h5 class="card-title">Pantalon costume</h5>
-                        <p class="card-text"></p>
-                        <div class="counter d-inline">
-                            <button class="btnDecrement btn-outline-secondary">-</button>
-                            <input class="inputQt" type="number" value="0" min="0">
-                            <button class="btnIncrement btn-outline-secondary">+</button>
-                        </div>
+            
+            <div class="col-lg-6">
+
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Votre email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="card-body">
-                        <img class="img-fluid" src="../img/delicat.webp" alt="">
-                        <h5 class="card-title">Chemise</h5>
-                        <p class="card-text"></p>
-                        <div class="counter d-inline">
-                            <button class="btnDecrement btn btn-outline-secondary">-</button>
-                            <input class="inputQt" type="number" value="0" min="0">
-                            <button class="btnIncrement btn btn-outline-secondary">+</button>
-                        </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
                     </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card pe-0">
-                    <div class="card-body">
-                        <img class="img-fluid" src="../img/lavagesec.webp" alt="">
-                        <h5 class="card-title">Veste costume</h5>
-                        <p class="card-text"></p>
-                        <div class="counter d-inline">
-                            <button class="btnDecrement btn btn-outline-secondary">-</button>
-                            <input class="inputQt" type="number" value="0" min="0">
-                            <button class="btnIncrement btn btn-outline-secondary">+</button>
-                        </div>
-                    </div>
+
+                    <button type="submit" class="btn btn-primary">Connexion</button>
+                </form>
+                <div class="fs-6 fw-light pt-5">
+                    <p class="fs-6 fw-lighter mb-0">Vous n'êtes pas encore inscrit?</p> <a class="fs-6 pt-1" href="inscription.html">Je créé mon compte</a>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-    <script>
-
-        document.addEventListener('DOMContentLoaded', function () {
-            let counters = document.querySelectorAll('.counter');
-
-            counters.forEach(function (counter) {
-                let inputQt = counter.querySelector('.inputQt');
-                let btnIncrement = counter.querySelector('.btnIncrement');
-                let btnDecrement = counter.querySelector('.btnDecrement');
-                let count = inputQt.value;
-
-                btnIncrement.addEventListener("click", function () {
-                    count++;
-                    inputQt.value = count;
-                });
-
-                btnDecrement.addEventListener("click", function () {
-                    if (count > 0) {
-                        count--;
-                        inputQt.value = count;
-                    }
-                });
-            });
-        });
-    </script>
 </body>

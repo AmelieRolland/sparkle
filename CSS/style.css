@@ -1,8 +1,53 @@
 body{
     margin: 0;
+    padding-top: 85px;
 }
 .navbar-nav .nav-link.active, .navbar-nav,.nav-link:focus {
     color: #EAFEF3;
+}
+.navbar {
+    transition: transform 0.5s ease-in-out;
+    overflow: visible;
+}
+
+.hidden-nav {
+    transform: translateY(-100%);
+}
+.dropdown-menu{
+    background-color: #394B41;
+    border: none;
+    margin: 0;
+}
+.dropdown-menu a{
+    color: #EAFEF3;
+}
+.dropdown-menu a:hover{
+    background-color: #ECD9B4;
+}
+.card {
+    margin: 10px;
+}
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.counter button {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+}
+.counter input {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #ced4da;
+    margin: 0 5px;
 }
 
 a{
@@ -15,31 +60,36 @@ a{
 }
 .fond-dore{
     background-color: #ECD9B4;
+    color: #1C2520;
 }
 .form-control{
     border-radius: 0%;
 }
 
 h1{
-    font-size: 5em;
+    font-size: 3em;
 }
 
 h1, h2, h3, h4 {
     font-family: 'Libre Caslon Display', serif;
 }
 h2{
-    font-size: 2.2em;
+    font-size: 1.7em;
     text-transform: uppercase;
 }
 .vh90{
-    height: 90vh;
+    height: 77vh;
+    border: pink;
+}
+.vh70{
+    height: 76.2vh;
 }
 .sac-en-cuir h2{
     font-size: 2.8em;
 }
 
 .hauteur-hexa{
-    height: 96vh;
+    height: 85vh;
 }
 
 .hexago{
@@ -52,9 +102,23 @@ h2{
     clip-path: polygon(0 0, 94% 0, 62% 100%, 0% 170%);
     margin-top: 0px;
     border: #ECD9B4 solid 3px;
-
-
 }
+
+.hexago3{
+    clip-path: polygon(0 0, 93.3% 0, 61.3% 100%, 0% 170%);
+    margin-top: 0px;
+    border: #ECD9B4 solid 3px;
+}
+
+.hexago4{
+    clip-path: polygon(0 0, 91% 0, 59% 100%, 0% 180%);
+    height: 70vh;
+    padding-top: 10px;
+    padding-left: 5px;
+    overflow: hidden;
+}
+
+
 .fond-vert{
     background-color: #394B41;
     color: #EAFEF3;
@@ -62,6 +126,7 @@ h2{
 
 p{
     font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
 }
 
 .border-dore{
@@ -113,7 +178,7 @@ footer a{
 }
 
 .fond-apropos{
-    background-image: url("../img/img-laverie\ .jpg");
+    background-image: url("../img/fond-nature.webp");
     color: white;
     background-attachment : fixed;
 }
@@ -123,12 +188,29 @@ footer a{
     background-color:#394B41;
     text-decoration: none;
     border-radius: 0%;
+    border: #394B41 solid 1px;
     color: #EAFEF3;
-    transition:all 0.5s ease
+    transition:all 0.5s ease;
+    
 }
 .btn-vert:hover{
     background-color: #394b4100;
     border: #394B41 solid 1px;
+    border-radius: 0%;
+    color: #1C2520;
+}
+.btn-vert-clair{
+    padding: 15px 30px;
+    background-color:#ECD9B4;
+    border: #ECD9B4 solid 1px;
+    text-decoration: none;
+    border-radius: 0%;
+    color: #1C2520;
+    transition:all 0.5s ease
+}
+.btn-vert-clair:hover{
+    background-color: #394b4100;
+    border: #ECD9B4 solid 1px;
     border-radius: 0%;
     color: #1C2520;
 }
@@ -147,6 +229,10 @@ footer a{
     border: #ECD9B4 solid 1px;
     border-radius: 0%;
     color: #ECD9B4;
+}
+
+.mneg{
+    margin-top: -600px;
 }
 
 .accordion-button{
@@ -181,6 +267,14 @@ footer a{
 
 
 @media screen and (max-width: 757px) {
+    .hexago2, .hexago3, .hexago4{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        width: 100%;
+
+    }
+    .bloc-gauche{
+        width: 100%;
+    }
     .container, .container-fluid {
         width: 100%;
         padding-left: 0;
@@ -191,6 +285,7 @@ footer a{
     }
     .hexago{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        width: 100%;
     }
     .bg-h2-clair{
         background: linear-gradient(90deg, rgba(234,254,243,1) 60%, rgba(234,254,243,0) 60%);
@@ -222,7 +317,7 @@ footer a{
     .hexago{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
-    .hexago2{
+    .hexago2, .hexago3, .hexago4{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 
     }
